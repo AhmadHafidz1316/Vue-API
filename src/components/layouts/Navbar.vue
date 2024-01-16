@@ -15,7 +15,7 @@
         <router-link to="/">Home</router-link>
         <router-link to="/Portfolio">Portofolio</router-link>
         <router-link to="/Blog">Blog</router-link>
-        <a href="">Contact</a>
+        <router-link to="/Contact">Contact</router-link>
       </div>
     </div>
   </div>

@@ -6,6 +6,7 @@ import App from './App.vue'
 import Home from '@/pages/Home.vue';
 import Portfolio from '@/pages/Portfolio.vue';
 import Blog from '@/pages/Blog.vue';
+import Contact from '@/pages/Contact.vue'
 const routes = [
     {
         path: '/',
@@ -22,6 +23,11 @@ const routes = [
         component: Blog,
         name: 'Blog',
     },
+    {
+        path: '/Contact',
+        component: Contact,
+        name: 'Contact',
+    }
 ] 
 
 const router = createRouter ({

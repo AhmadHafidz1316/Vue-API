@@ -1,10 +1,5 @@
 <template>
   <div class="portofolio">
-    <h3>Portofolio Kami</h3>
-    <p>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur amet
-      dolor at dolore fugit velit perferendis culpa quo maxime est.
-    </p>
     <div class="row-portofolio">
         <CardPortfolio v-for="item in data" :portfolio="item" :key="item.id"></CardPortfolio>
     </div>

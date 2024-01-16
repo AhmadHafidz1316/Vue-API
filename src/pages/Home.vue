@@ -16,20 +16,16 @@
     data() {
       return {
         DataHome: [],
-        DataLayanan: [],
-        DataBlog : []
+        DataLayanan: []
       }
     },
     async created() {
       // const response = await Get('http://localhost:9000/api/home');
-      const response = await Get('http://127.0.0.1:9000/api/home');
+      const response = await Get('home');
       this.DataHome = response.data;
   
-      const responseLayanan = await Get('http://127.0.0.1:9000/api/services');
+      const responseLayanan = await Get('services');
       this.DataLayanan = responseLayanan.data.data;
-
-      const responseBlog = await Get('http://127.0.0.1:9000/api/portfolio');
-      this.DataBlog = responseBlog.data.data;
     },
   }
   </script>
